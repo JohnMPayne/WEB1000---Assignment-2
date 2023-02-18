@@ -49,6 +49,10 @@ nav, footer {
    grid-column: span 4;
 }
 
+aside {
+   grid-column: span 2;
+}
+
 nav.horizontal li {
    display: block;
    width: 12.5%;
