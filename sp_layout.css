@@ -43,20 +43,25 @@ body {
    width: 100% ;
  }
 
-
-
 /* Horizontal Navigation List Styles */
+
+nav, footer {
+   grid-column: span 4;
+}
+
 nav.horizontal li {
    display: block;
    width: 12.5%;
    float: left;
 }
 
-
-
 /* Section Styles */
 
-
+section img {
+   width: 50%;
+   margin: 0 auto;
+   display: block;
+}
 
 
 /* Customer Comment Styles */
