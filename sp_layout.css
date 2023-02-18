@@ -78,4 +78,10 @@ section p {
 aside {
    width: 75%; 
    padding-bottom: 30px;
-}
+   grid-column: span 1;
+   text-align: center;
+ }
+ 
+ aside:nth-of-type(odd) {
+   justify-self: end;
+ }
