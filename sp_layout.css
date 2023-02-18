@@ -63,6 +63,11 @@ section img {
    display: block;
 }
 
+section p {
+   width: 70%;
+   margin: 0 auto;
+}
+
 
 /* Customer Comment Styles */
 
