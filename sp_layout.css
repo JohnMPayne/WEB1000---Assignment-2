@@ -22,7 +22,8 @@ html {
    width: 95%;
    min-width: 640px ;
    max-width: 960px ;
-   margin: 0 auto;
+   margin-left: 0 auto;
+   margin-right: 0 auto;
    min-height: 100vh;
  }
 
@@ -33,12 +34,23 @@ html {
 
 /* CSS Grid Styles */
 
-
-
+body {
+   display: grid;
+   grid-column: 1fr 1fr 1fr 1fr ;
+}
+ #logo{
+   grid-column: 1 / span 3 ;
+   width: 100% ;
+ }
 
 
 
 /* Horizontal Navigation List Styles */
+nav.horizontal li {
+   display: block;
+   width: 12.5%;
+   float: left;
+}
 
 
 
