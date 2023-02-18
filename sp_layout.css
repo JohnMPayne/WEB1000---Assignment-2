@@ -36,7 +36,7 @@ html {
 
 body {
    display: grid;
-   grid-column: 1fr 1fr 1fr 1fr ;
+   grid-template-columns: 1fr 1fr 1fr 1fr ;
 }
  #logo{
    grid-column: 1 / span 3 ;
@@ -45,7 +45,7 @@ body {
 
 /* Horizontal Navigation List Styles */
 
-nav, footer {
+nav.horizontal, footer {
    grid-column: span 4;
 }
 
@@ -56,20 +56,26 @@ aside {
 nav.horizontal li {
    display: block;
    width: 12.5%;
-   float: left;
+   margin-left: float;
 }
 
 /* Section Styles */
 
 section img {
    width: 50%;
-   margin: 0 auto;
+   margin-top: 0;
+   margin-bottom: 0;
+   margin-left: auto;
+   margin-right: auto;
    display: block;
 }
 
 section p {
    width: 70%;
-   margin: 0 auto;
+   margin-top: 0;
+   margin-bottom: 0;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 
@@ -78,10 +84,20 @@ section p {
 aside {
    width: 75%; 
    padding-bottom: 30px;
-   grid-column: span 1;
-   text-align: center;
+
  }
  
  aside:nth-of-type(odd) {
    justify-self: end;
+ }
+
+ aside img {
+   float: left;
+   width: 20%;
+ }
+
+ aside p {
+   float: left; 
+   width: 75%;
+   margin-left: 5%;
  }
